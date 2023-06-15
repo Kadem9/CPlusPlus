@@ -15,6 +15,13 @@ int main()
 
 	cout << "---> DEBUT" << endl << endl;
 
+	// j'instanc i mes différents combats
+	Combats combats[3] = {
+		Combats("Demi-finale 1"),
+		Combats("Demi-finale 2"),
+		Combats("Finale")
+		};
+
 	// Mon premier boxeur
 
 	Boxeur boxeur_1("Mike Tyson", 79);
@@ -51,11 +58,18 @@ int main()
 	cout << "Et le coin rouge, sera occupé par le célèbre ... " << combat_1.getCoinRouge()->GetNom() << endl;
 
 	//combat_1.setCoinRouge(&boxeur_1); // Test pour voir si on peut mettre dans l'autre camp un autre boxeur
-
 	cout << "Le grand gagnant de ce combat est " << combat_1.DesignerVainqueur("rouge")->GetNom() << endl;
+
+	// Je met mes boxeurs pour le premier match
+	combats[0].setCoinBleu(&boxeur_1);
+	combats[0].setCoinRouge(boxeur_2);
+
 
 	// Mon boxeur 1 est Mike Tyson
 	// Memo : Mon boxeur 2 est Mayweather 
+
+
+
 
 	delete boxeur_2;
 	delete boxeur_3;
