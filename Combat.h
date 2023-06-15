@@ -9,6 +9,7 @@ namespace Combat {
 	    private: 
 		    string niveau;
             Boxeur* coinBleu;
+            Boxeur* coinRouge;
 
         public: 
             // Constructeur
@@ -23,9 +24,12 @@ namespace Combat {
             // Méthode pour le setter et le getter de Coinbleu 
             Boxeur* getCoinBleu() { return coinBleu; }
 
-                void setCoinBleu(Boxeur* nouveauCoinBleu) {
-                coinBleu = nouveauCoinBleu;
-            }
+            void setCoinBleu(Boxeur* nouveauCoinBleu) { coinBleu = nouveauCoinBleu; }
+
+            // Méthode pour le setter et le getter de CoinRouge 
+            Boxeur* getCoinRouge() { return coinRouge; }
+
+            void setCoinRouge(Boxeur* nouveauCoinRouge) { coinBleu = nouveauCoinRouge; }
     };
 }
 
