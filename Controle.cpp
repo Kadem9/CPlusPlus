@@ -58,17 +58,34 @@ int main()
 	cout << "Et le coin rouge, sera occupé par le célèbre ... " << combat_1.getCoinRouge()->GetNom() << endl;
 
 	//combat_1.setCoinRouge(&boxeur_1); // Test pour voir si on peut mettre dans l'autre camp un autre boxeur
-	cout << "Le grand gagnant de ce combat est " << combat_1.DesignerVainqueur("rouge")->GetNom() << endl;
+	cout << "Le grand gagnant de ce combat est " << combat_1.DesignerVainqueur("rouge")->GetNom() << endl << endl;
 
 	// Je met mes boxeurs pour le premier match
 	combats[0].setCoinBleu(&boxeur_1);
 	combats[0].setCoinRouge(boxeur_2);
 
+	// Je met mes boxeurs pour le deuxime match
+	combats[1].setCoinBleu(boxeur_3);
+	combats[1].setCoinRouge(boxeur_4);
+
+	// je designe les vainqueurs pour ma finale
+	Boxeur* vainqueur_demi1 = combats[0].DesignerVainqueur("rouge");
+	Boxeur* vainqueur_demi2 = combats[1].DesignerVainqueur("bleu");
+
+	// je met mes vainqueurs pour ma finale
+	combats[2].setCoinBleu(vainqueur_demi1);
+	combats[2].setCoinRouge(vainqueur_demi2);
+
+	// je designe le vainqueur de la finale
+	Boxeur* vainqueur_finale = combats[2].DesignerVainqueur("rouge");
 
 	// Mon boxeur 1 est Mike Tyson
 	// Memo : Mon boxeur 2 est Mayweather 
 
-
+	  // jE donne les résultats de mes finales
+	cout << "Vainqueur de la demi-finale 1 : " << vainqueur_demi1->GetNom() << endl;
+	cout << "Vainqueur de la demi-finale 2 : " << vainqueur_demi2->GetNom() << endl;
+	cout << "Vainqueur de la finale : " << vainqueur_finale->GetNom() << endl << endl;
 
 
 	delete boxeur_2;
