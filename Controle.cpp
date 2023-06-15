@@ -33,7 +33,16 @@ int main()
 
 	// Association entre combat_1 et boxeur_1
 	combat_1.setCoinBleu(&boxeur_1);
-	cout << "Le coin bleu sera occupé par ..." << combat_1.getCoinBleu()->GetNom() << endl;
+	cout << "Le coin bleu sera occupé par ... " << combat_1.getCoinBleu()->GetNom() << endl;
+
+	// Association entre combat_1 et boxeur_2
+	combat_1.setCoinRouge(boxeur_2);
+	cout << "Et le coin rouge, sera occupé par le célèbre ... " << combat_1.getCoinRouge()->GetNom() << endl;
+
+	combat_1.setCoinRouge(boxeur_2);
+
+	// Mon boxeur 1 est Mike Tyson
+	// Memo : Mon boxeur 2 est Mayweather 
 
 
 	delete boxeur_2;
