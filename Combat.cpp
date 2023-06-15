@@ -36,3 +36,16 @@ Combat::Boxeur*::Combat::Combats::GetVainqueur()
 {
     return vainqueur;
 }
+
+void Combat::Combats::AfficheResultats(Combats combats[])
+{
+    // Je n'ai pas fini par manque de temps :(
+    for (int i = 0; i < 3; i++) {
+        cout << "Combat " << i + 1 << endl;
+        cout << "Niveau : " << combats[i].GetNiveau() << endl;
+        cout << "Coin bleu : " << combats[i].getCoinBleu()->GetNom() << endl;
+        cout << "Coin rouge : " << combats[i].getCoinRouge()->GetNom() << endl;
+        cout << "Vainqueur : " << combats[i].GetVainqueur()->GetNom() << endl;
+        cout << endl;
+    }
+}

@@ -57,5 +57,7 @@ namespace Combat {
             Boxeur* DesignerVainqueur(string couleurCoin);
 
             Boxeur* GetVainqueur();
+
+            void AfficheResultats(Combats combats[]);
     };
 }

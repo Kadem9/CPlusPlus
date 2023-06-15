@@ -87,6 +87,7 @@ int main()
 	cout << "Vainqueur de la demi-finale 2 : " << vainqueur_demi2->GetNom() << endl;
 	cout << "Vainqueur de la finale : " << vainqueur_finale->GetNom() << endl << endl;
 
+	// Je n'ai pas terminé : Combats::AfficheResultats(combats);
 
 	delete boxeur_2;
 	delete boxeur_3;
