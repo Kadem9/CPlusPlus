@@ -49,5 +49,8 @@ namespace Combat {
                     cout << "Ce boxeur combat déjà dans l'autre camp" << endl;
                 }
             }
+
+            // Méthode pour designer le vainqueur
+            Boxeur* DesignerVainqueur(string couleurCoin);
     };
 }

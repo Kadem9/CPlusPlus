@@ -1,7 +1,7 @@
 ﻿  Combat.cpp
-C:\Users\Kadem\Desktop\Isitech\ECOLE\B2\C++\Controle\Controle\Controle\Combat.h(34,21): error C2065: 'cout' : identificateur non déclaré
-C:\Users\Kadem\Desktop\Isitech\ECOLE\B2\C++\Controle\Controle\Controle\Combat.h(34,76): error C2065: 'endl' : identificateur non déclaré
-C:\Users\Kadem\Desktop\Isitech\ECOLE\B2\C++\Controle\Controle\Controle\Combat.h(48,21): error C2065: 'cout' : identificateur non déclaré
-C:\Users\Kadem\Desktop\Isitech\ECOLE\B2\C++\Controle\Controle\Controle\Combat.h(48,76): error C2065: 'endl' : identificateur non déclaré
+C:\Users\Kadem\Desktop\Isitech\ECOLE\B2\C++\Controle\Controle\Controle\Combat.h(35,21): error C2065: 'cout' : identificateur non déclaré
+C:\Users\Kadem\Desktop\Isitech\ECOLE\B2\C++\Controle\Controle\Controle\Combat.h(35,76): error C2065: 'endl' : identificateur non déclaré
+C:\Users\Kadem\Desktop\Isitech\ECOLE\B2\C++\Controle\Controle\Controle\Combat.h(49,21): error C2065: 'cout' : identificateur non déclaré
+C:\Users\Kadem\Desktop\Isitech\ECOLE\B2\C++\Controle\Controle\Controle\Combat.h(49,76): error C2065: 'endl' : identificateur non déclaré
   Controle.cpp
   Génération de code en cours...

@@ -17,3 +17,17 @@ Combat::Combats::~Combats()
 	std::cout << "Destruction du niveau " << this->niveau << this << std::endl;
 #endif
 }
+
+Combat::Boxeur*::Combat::Combats::DesignerVainqueur(string couleurCoin)
+{
+    if (couleurCoin == "rouge") {
+        vainqueur = coinRouge;
+    }
+    else if (couleurCoin == "bleu") {
+        vainqueur = coinBleu;
+    }
+    else {
+        vainqueur = nullptr;
+    }
+    return vainqueur;
+}

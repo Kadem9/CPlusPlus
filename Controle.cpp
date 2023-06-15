@@ -41,6 +41,8 @@ int main()
 
 	combat_1.setCoinRouge(boxeur_2);
 
+	combat_1.DesignerVainqueur("rouge");
+
 	// Mon boxeur 1 est Mike Tyson
 	// Memo : Mon boxeur 2 est Mayweather 
 
