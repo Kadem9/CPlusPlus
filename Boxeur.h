@@ -11,10 +11,16 @@ namespace Combat
 		string nom;
 		double poids;
 	public:
-		Boxeur();
+
 		string GetNom() { return nom;}
 		double GetPoids() { return poids; }
-		void SetPoids(double& poid) { this->poids = poid; }
+		void SetPoids(double nouveauPoids) { this->poids = nouveauPoids; }
+
+		// Mon constructeur
+		Boxeur(string& nom, double poids);
+
+		// Mon destructeur
+		~Boxeur();
 	};
 }
 
