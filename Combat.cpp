@@ -13,4 +13,7 @@ Combat::Combats::Combats(string niveau)
 
 Combat::Combats::~Combats()
 {
+#ifdef TRACE
+	std::cout << "Destruction du niveau " << this->niveau << this << std::endl;
+#endif
 }
