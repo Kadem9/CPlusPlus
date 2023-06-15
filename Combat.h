@@ -41,6 +41,7 @@ namespace Combat {
             // Méthode pour le setter et le getter de CoinRouge 
             Boxeur* getCoinRouge() { return coinRouge; }
 
+            // Todo si j'ai le temps : Mettre dans conbat.cpp
             void setCoinRouge(Boxeur* nouveauCoinRouge) { 
                coinRouge = nouveauCoinRouge;
 
