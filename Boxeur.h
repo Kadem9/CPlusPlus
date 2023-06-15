@@ -17,7 +17,7 @@ namespace Combat
 		void SetPoids(double nouveauPoids) { this->poids = nouveauPoids; }
 
 		// Mon constructeur
-		Boxeur(string& nom, double poids);
+		Boxeur(string nom, double poids);
 
 		// Mon destructeur
 		~Boxeur();

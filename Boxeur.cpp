@@ -2,8 +2,10 @@
 #include "Boxeur.h"
 #include <iostream>
 
-Combat::Boxeur::Boxeur(string& nom, double poids)
+Combat::Boxeur::Boxeur(string nom, double poids)
 {
+	this->nom = nom;
+	this->poids = poids;
 #ifdef TRACE
 	std::cout << "Boxeur (" << this->nom << ") de " << this << std::endl;
 #endif
