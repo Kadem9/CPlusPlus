@@ -39,10 +39,10 @@ int main()
 	combat_1.setCoinRouge(boxeur_2);
 	cout << "Et le coin rouge, sera occupé par le célèbre ... " << combat_1.getCoinRouge()->GetNom() << endl;
 
-	combat_1.setCoinRouge(&boxeur_1); // Test pour voir si on peut mettre dans l'autre camp un autre boxeur
+	//combat_1.setCoinRouge(&boxeur_1); // Test pour voir si on peut mettre dans l'autre camp un autre boxeur
 
 	
-	cout << "Le grand gagnant de ce combat est " << combat_1.DesignerVainqueur("bleu")->GetNom() << endl;
+	cout << "Le grand gagnant de ce combat est " << combat_1.DesignerVainqueur("rouge")->GetNom() << endl;
 
 	// Mon boxeur 1 est Mike Tyson
 	// Memo : Mon boxeur 2 est Mayweather 
