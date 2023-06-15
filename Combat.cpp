@@ -31,3 +31,8 @@ Combat::Boxeur*::Combat::Combats::DesignerVainqueur(string couleurCoin)
     }
     return vainqueur;
 }
+
+Combat::Boxeur*::Combat::Combats::GetVainqueur()
+{
+    return vainqueur;
+}

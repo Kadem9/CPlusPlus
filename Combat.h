@@ -1,6 +1,8 @@
 #pragma once
 #include <string>
 #include "Boxeur.h"
+#include <iostream>
+
 using namespace std;
 
 namespace Combat {
@@ -52,5 +54,7 @@ namespace Combat {
 
             // Méthode pour designer le vainqueur
             Boxeur* DesignerVainqueur(string couleurCoin);
+
+            Boxeur* GetVainqueur();
     };
 }
